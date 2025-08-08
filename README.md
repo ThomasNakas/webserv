@@ -1,7 +1,7 @@
 # webserv
 ![Screenshot 2025-07-07 at 5 10 51 PM](https://github.com/user-attachments/assets/0a25aca9-c414-4f8b-9a3e-ad108ab61006)
 
-**webserv** is a lightweight, high-performance HTTP web server implemented in C++. It aims to replicate essential features of modern web servers such as NGINX. It is the third team project of the 42 core curriculum and we worked on it with [Thomas](https://github.com/ThomasNakas).
+**webserv** is a lightweight, high-performance HTTP web server implemented in C++. It aims to replicate essential features of modern web servers such as NGINX. It is the three team project of the 42 core curriculum and we worked on it two people with [Thalia](https://github.com/tsimitop).
 
 ## Features
 
@@ -10,8 +10,13 @@
 - CGI execution (Python)
 - Configurable via a custom config file
 - Basic error handling (404, 500, etc.)
-- Support for multiple client connections using `poll()`
-- Customizable routing and server blocks
+- Support for multiple client non blocking connections using `poll()`
+- Customizable routing(server, update, default_error_page) and server blocks
+- siege stress test 100%-99.9% with:
+  - 6 running servers
+  - 100 clients / server
+  - the server is conigured from one computer and tested by a different one
+  - with non empty files
 
 ## Getting Started
 
